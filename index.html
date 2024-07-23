@@ -1,103 +1,55 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REQUISITOS NO FUNCIONALES</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Requisistos no Funcionales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body class="dashboard">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">Requisitod no Funcionales</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="sidebarMenu">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="perfil.html"><i class="fas fa-lock"></i>Seguridad</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="user.html"><i class="fas fa-universal-access"></i> Usabilidad</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Clientes.html"><i class="fas fa-globe"></i> Accesibilidad</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="categorias.html"><i class="fas fa-satellite-dish"></i> Portabilidad</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="productos.html"><i class="fas fa-clock"></i> Tiempos de respuesta</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pedidos.html"><i class="fas fa-bolt"></i> Adaptabilidad</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html"><i class="fas fa-user-shield"></i> confiabilidad</a>
-                </li>
-            </ul>
+<body>
+
+    <!-- Navbar -->
+    <div class='dashboard'>
+        <div class="dashboard-nav">
+            <header><a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a><a href="#" class="brand-logo text-decoration-none"><i class="fa-solid fa-database"></i> <span>RN-Funcionales</span></a></header>
+            <nav class="dashboard-nav-list">
+                <a href="#" class="dashboard-nav-item active text-decoration-none fw-bold"><i class="fas fa-home"></i> Home </a>
+                <a href="contenido/seguridad.html" class="dashboard-nav-item text-decoration-none fw-bold"><i class="fa-solid fa-file-invoice"></i>Seguridad</a>
+                <a href="contenido/usabilidad.html" class="dashboard-nav-item text-decoration-none fw-bold"><i class="fa-solid fa-clone"></i>Usabilidad</a>
+                <a href="contenido/accesibilidad.html" class="dashboard-nav-item text-decoration-none fw-bold"><i class="fa-solid fa-table-list"></i>Accesibilidad</a>
+                <a href="contenido/portabilidad.html" class="dashboard-nav-item text-decoration-none fw-bold"><i class="fa-solid fa-diagram-project"></i>Portabilidad</a>
+            </nav>
         </div>
-    </nav>
-    <div id="content" class="container mt-4">
-        <h1>Bienvenido al Panel Administra</h1>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card stats-card">
-                    <div class="card-body">
-                        <div>
-                            <h5 class="card-title">Cantidad de Clientes</h5>
-                            <p class="card-text">1.234</p>
+        <div class='dashboard-app'>
+            <header class='dashboard-toolbar'><a href="#!" class="menu-toggle text-decoration-none"><i class="fas fa-bars"></i></a></header>
+            <div class='dashboard-content'>
+                    
+                        <div class='card-header'>
+                            <h1 class="fw-bold">¿Qué es son los Requisistos no Funcionales?</h1>
                         </div>
-                        <div class="stat-icon">
-                            <i class="fas fa-users"></i>
+                        <div class='card-body'>
+                            <div class="row">
+                                <div class="col-md-6 mt-5">
+                                    <p>Los requisitos no funcionales (RNF) son aspectos críticos que definen cómo debe funcionar un software, más allá de su funcionalidad básica. Estos requisitos no se traducen directamente en características visibles, pero son esenciales para la calidad general y la experiencia del usuario.<br>
+                                        En esta investigación, analizaremos en profundidad los RNF: seguridad, usabilidad, accesibilidad, portabilidad, tiempos de respuesta, adaptabilidad y confiabilidad.<br>
+                                    </p>
+                                </div>
+                                <div class="col-md-6 text-center mt-3">
+                                    <img src="img/analisis-funcional.png" width="400" height="400">
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card stats-card">
-                    <div class="card-body">
-                        <div>
-                            <h5 class="card-title">Cantidad de Pedidos</h5>
-                            <p class="card-text">567</p>
-                        </div>
-                        <div class="stat-icon">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card stats-card">
-                    <div class="card-body">
-                        <div>
-                            <h5 class="card-title">Cantidad de Productos</h5>
-                            <p class="card-text">123</p>
-                        </div>
-                        <div class="stat-icon">
-                            <i class="fas fa-box"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="chart-container">
-            <h2>Revenue Stats</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="../img/primera_ropa.webp" alt="Gráfica de ingresos" style="width: 70%;">
-                </div>
-                <div class="col-md-6">
-                    <img src="../img/COMPRAROPAONLINE.webp" alt="Gráfica de torta" style="width: 90%;">
-                </div>
+                    
             </div>
         </div>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
+
